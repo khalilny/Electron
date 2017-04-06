@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="34" passed="34">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="58012" started-at="2017-04-06T12:54:59Z" finished-at="2017-04-06T12:55:57Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="58012" started-at="2017-04-06T12:54:59Z" finished-at="2017-04-06T12:55:57Z">
+      <class name="tests.TestRegisterPage">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.TestRegisterPage@6a41eaa2]" name="setUp" is-config="true" duration-ms="6592" started-at="2017-04-06T08:54:52Z" finished-at="2017-04-06T08:54:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="classSetUp()[pri:0, instance:tests.TestRegisterPage@6a41eaa2]" name="classSetUp" is-config="true" duration-ms="1743" started-at="2017-04-06T08:54:59Z" finished-at="2017-04-06T08:55:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- classSetUp -->
+        <test-method status="PASS" signature="testConfirmPasswordFieldWithValidPasswordAndDifferentConfirmPassword()[pri:0, instance:tests.TestRegisterPage@6a41eaa2]" name="testConfirmPasswordFieldWithValidPasswordAndDifferentConfirmPassword" duration-ms="1830" started-at="2017-04-06T08:55:01Z" finished-at="2017-04-06T08:55:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testConfirmPasswordFieldWithValidPasswordAndDifferentConfirmPassword -->
+        <test-method status="PASS" signature="testConfirmPasswordFieldWithValidPasswordAndSameConfirmPassword()[pri:0, instance:tests.TestRegisterPage@6a41eaa2]" name="testConfirmPasswordFieldWithValidPasswordAndSameConfirmPassword" duration-ms="1337" started-at="2017-04-06T08:55:03Z" finished-at="2017-04-06T08:55:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testConfirmPasswordFieldWithValidPasswordAndSameConfirmPassword -->
+        <test-method status="PASS" signature="testDateOfBirthWithEmptyCredential()[pri:0, instance:tests.TestRegisterPage@6a41eaa2]" name="testDateOfBirthWithEmptyCredential" duration-ms="57" started-at="2017-04-06T08:55:04Z" finished-at="2017-04-06T08:55:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDateOfBirthWithEmptyCredential -->
+        <test-method status="PASS" signature="testDateOfBirthWithInvalidCredential()[pri:0, instance:tests.TestRegisterPage@6a41eaa2]" name="testDateOfBirthWithInvalidCredential" duration-ms="3431" started-at="2017-04-06T08:55:04Z" finished-at="2017-04-06T08:55:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDateOfBirthWithInvalidCredential -->
+        <test-method status="PASS" signature="testDateOfBirthWithValidCredential()[pri:0, instance:tests.TestRegisterPage@6a41eaa2]" name="testDateOfBirthWithValidCredential" duration-ms="58" started-at="2017-04-06T08:55:07Z" finished-at="2017-04-06T08:55:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDateOfBirthWithValidCredential -->
+        <test-method status="PASS" signature="testEmailFieldWithEmptyEmail()[pri:0, instance:tests.TestRegisterPage@6a41eaa2]" name="testEmailFieldWithEmptyEmail" duration-ms="1135" started-at="2017-04-06T08:55:07Z" finished-at="2017-04-06T08:55:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEmailFieldWithEmptyEmail -->
+        <test-method status="PASS" signature="testEmailFieldWithInValidEmailId()[pri:0, instance:tests.TestRegisterPage@6a41eaa2]" name="testEmailFieldWithInValidEmailId" duration-ms="3779" started-at="2017-04-06T08:55:09Z" finished-at="2017-04-06T08:55:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEmailFieldWithInValidEmailId -->
+        <test-method status="PASS" signature="testEmailFieldWithValidEmailID()[pri:0, instance:tests.TestRegisterPage@6a41eaa2]" name="testEmailFieldWithValidEmailID" duration-ms="1239" started-at="2017-04-06T08:55:12Z" finished-at="2017-04-06T08:55:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEmailFieldWithValidEmailID -->
+        <test-method status="PASS" signature="testFirstNameWithEmptyField()[pri:0, instance:tests.TestRegisterPage@6a41eaa2]" name="testFirstNameWithEmptyField" duration-ms="1955" started-at="2017-04-06T08:55:14Z" finished-at="2017-04-06T08:55:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFirstNameWithEmptyField -->
+        <test-method status="PASS" signature="testFirstNameWithNumericData()[pri:0, instance:tests.TestRegisterPage@6a41eaa2]" name="testFirstNameWithNumericData" duration-ms="1648" started-at="2017-04-06T08:55:16Z" finished-at="2017-04-06T08:55:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFirstNameWithNumericData -->
+        <test-method status="PASS" signature="testFirstNameWithOneChar()[pri:0, instance:tests.TestRegisterPage@6a41eaa2]" name="testFirstNameWithOneChar" duration-ms="1840" started-at="2017-04-06T08:55:17Z" finished-at="2017-04-06T08:55:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFirstNameWithOneChar -->
+        <test-method status="PASS" signature="testFirstNameWithThirtyChar()[pri:0, instance:tests.TestRegisterPage@6a41eaa2]" name="testFirstNameWithThirtyChar" duration-ms="1312" started-at="2017-04-06T08:55:19Z" finished-at="2017-04-06T08:55:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFirstNameWithThirtyChar -->
+        <test-method status="PASS" signature="testFirstNameWithThirtyOneChar()[pri:0, instance:tests.TestRegisterPage@6a41eaa2]" name="testFirstNameWithThirtyOneChar" duration-ms="1293" started-at="2017-04-06T08:55:20Z" finished-at="2017-04-06T08:55:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFirstNameWithThirtyOneChar -->
+        <test-method status="PASS" signature="testFirstNameWithTwoChar()[pri:0, instance:tests.TestRegisterPage@6a41eaa2]" name="testFirstNameWithTwoChar" duration-ms="1493" started-at="2017-04-06T08:55:22Z" finished-at="2017-04-06T08:55:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFirstNameWithTwoChar -->
+        <test-method status="PASS" signature="testGenderWithRandomOption()[pri:0, instance:tests.TestRegisterPage@6a41eaa2]" name="testGenderWithRandomOption" duration-ms="1310" started-at="2017-04-06T08:55:23Z" finished-at="2017-04-06T08:55:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGenderWithRandomOption -->
+        <test-method status="PASS" signature="testGenderWithoutSelectedOption()[pri:0, instance:tests.TestRegisterPage@6a41eaa2]" name="testGenderWithoutSelectedOption" duration-ms="2464" started-at="2017-04-06T08:55:24Z" finished-at="2017-04-06T08:55:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGenderWithoutSelectedOption -->
+        <test-method status="PASS" signature="testLastNameWithEmptyField()[pri:0, instance:tests.TestRegisterPage@6a41eaa2]" name="testLastNameWithEmptyField" duration-ms="1781" started-at="2017-04-06T08:55:27Z" finished-at="2017-04-06T08:55:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLastNameWithEmptyField -->
+        <test-method status="PASS" signature="testLastNameWithNumericData()[pri:0, instance:tests.TestRegisterPage@6a41eaa2]" name="testLastNameWithNumericData" duration-ms="1032" started-at="2017-04-06T08:55:29Z" finished-at="2017-04-06T08:55:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLastNameWithNumericData -->
+        <test-method status="PASS" signature="testLastNameWithOneChar()[pri:0, instance:tests.TestRegisterPage@6a41eaa2]" name="testLastNameWithOneChar" duration-ms="1238" started-at="2017-04-06T08:55:30Z" finished-at="2017-04-06T08:55:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLastNameWithOneChar -->
+        <test-method status="PASS" signature="testLastNameWithThirtyChar()[pri:0, instance:tests.TestRegisterPage@6a41eaa2]" name="testLastNameWithThirtyChar" duration-ms="1274" started-at="2017-04-06T08:55:31Z" finished-at="2017-04-06T08:55:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLastNameWithThirtyChar -->
+        <test-method status="PASS" signature="testLastNameWithThirtyOneChar()[pri:0, instance:tests.TestRegisterPage@6a41eaa2]" name="testLastNameWithThirtyOneChar" duration-ms="1943" started-at="2017-04-06T08:55:32Z" finished-at="2017-04-06T08:55:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLastNameWithThirtyOneChar -->
+        <test-method status="PASS" signature="testLastNameWithTwoChar()[pri:0, instance:tests.TestRegisterPage@6a41eaa2]" name="testLastNameWithTwoChar" duration-ms="1156" started-at="2017-04-06T08:55:34Z" finished-at="2017-04-06T08:55:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLastNameWithTwoChar -->
+        <test-method status="PASS" signature="testPasswordFieldWithEmptyPassword()[pri:0, instance:tests.TestRegisterPage@6a41eaa2]" name="testPasswordFieldWithEmptyPassword" duration-ms="1432" started-at="2017-04-06T08:55:35Z" finished-at="2017-04-06T08:55:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPasswordFieldWithEmptyPassword -->
+        <test-method status="PASS" signature="testPasswordFieldWithFiveCharacter()[pri:0, instance:tests.TestRegisterPage@6a41eaa2]" name="testPasswordFieldWithFiveCharacter" duration-ms="1485" started-at="2017-04-06T08:55:37Z" finished-at="2017-04-06T08:55:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPasswordFieldWithFiveCharacter -->
+        <test-method status="PASS" signature="testPasswordFieldWithNumberAndCharacter()[pri:0, instance:tests.TestRegisterPage@6a41eaa2]" name="testPasswordFieldWithNumberAndCharacter" duration-ms="1610" started-at="2017-04-06T08:55:38Z" finished-at="2017-04-06T08:55:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPasswordFieldWithNumberAndCharacter -->
+        <test-method status="PASS" signature="testPasswordFieldWithSixCharacter()[pri:0, instance:tests.TestRegisterPage@6a41eaa2]" name="testPasswordFieldWithSixCharacter" duration-ms="1088" started-at="2017-04-06T08:55:40Z" finished-at="2017-04-06T08:55:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPasswordFieldWithSixCharacter -->
+        <test-method status="PASS" signature="testPasswordFieldWithTwentyCharacter()[pri:0, instance:tests.TestRegisterPage@6a41eaa2]" name="testPasswordFieldWithTwentyCharacter" duration-ms="1510" started-at="2017-04-06T08:55:41Z" finished-at="2017-04-06T08:55:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPasswordFieldWithTwentyCharacter -->
+        <test-method status="PASS" signature="testPasswordFieldWithTwentyOneCharacter()[pri:0, instance:tests.TestRegisterPage@6a41eaa2]" name="testPasswordFieldWithTwentyOneCharacter" duration-ms="1953" started-at="2017-04-06T08:55:43Z" finished-at="2017-04-06T08:55:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPasswordFieldWithTwentyOneCharacter -->
+        <test-method status="PASS" signature="testPhoneNumberWithCharacter()[pri:0, instance:tests.TestRegisterPage@6a41eaa2]" name="testPhoneNumberWithCharacter" duration-ms="1232" started-at="2017-04-06T08:55:44Z" finished-at="2017-04-06T08:55:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPhoneNumberWithCharacter -->
+        <test-method status="PASS" signature="testPhoneNumberWithEmptyDigitNumber()[pri:0, instance:tests.TestRegisterPage@6a41eaa2]" name="testPhoneNumberWithEmptyDigitNumber" duration-ms="2728" started-at="2017-04-06T08:55:46Z" finished-at="2017-04-06T08:55:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPhoneNumberWithEmptyDigitNumber -->
+        <test-method status="PASS" signature="testPhoneNumberWithOneDigitNumber()[pri:0, instance:tests.TestRegisterPage@6a41eaa2]" name="testPhoneNumberWithOneDigitNumber" duration-ms="1251" started-at="2017-04-06T08:55:48Z" finished-at="2017-04-06T08:55:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPhoneNumberWithOneDigitNumber -->
+        <test-method status="PASS" signature="testPhoneNumberWithValidSixteenDigitNumber()[pri:0, instance:tests.TestRegisterPage@6a41eaa2]" name="testPhoneNumberWithValidSixteenDigitNumber" duration-ms="1415" started-at="2017-04-06T08:55:50Z" finished-at="2017-04-06T08:55:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPhoneNumberWithValidSixteenDigitNumber -->
+        <test-method status="PASS" signature="testUserTypeWithRandomOption()[pri:0, instance:tests.TestRegisterPage@6a41eaa2]" name="testUserTypeWithRandomOption" duration-ms="1440" started-at="2017-04-06T08:55:51Z" finished-at="2017-04-06T08:55:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUserTypeWithRandomOption -->
+        <test-method status="PASS" signature="testUserTypeWithoutSelectedOption()[pri:0, instance:tests.TestRegisterPage@6a41eaa2]" name="testUserTypeWithoutSelectedOption" duration-ms="2866" started-at="2017-04-06T08:55:53Z" finished-at="2017-04-06T08:55:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUserTypeWithoutSelectedOption -->
+        <test-method status="PASS" signature="classTearDown()[pri:0, instance:tests.TestRegisterPage@6a41eaa2]" name="classTearDown" is-config="true" duration-ms="1342" started-at="2017-04-06T08:55:55Z" finished-at="2017-04-06T08:55:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- classTearDown -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.TestRegisterPage@6a41eaa2]" name="tearDown" is-config="true" duration-ms="102" started-at="2017-04-06T08:55:57Z" finished-at="2017-04-06T08:55:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.TestRegisterPage -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

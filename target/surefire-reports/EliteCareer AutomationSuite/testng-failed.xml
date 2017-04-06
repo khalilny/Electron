@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [EliteCareer AutomationSuite]">
+  <test name="Regression Test(failed)">
+    <classes>
+      <class name="tests.TestRegisterPage">
+        <methods>
+          <include name="classSetUp"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="classTearDown"/>
+          <include name="testDateOfBirthWithInvalidCredential"/>
+          <include name="testDateOfBirthWithValidCredential"/>
+        </methods>
+      </class> <!-- tests.TestRegisterPage -->
+    </classes>
+  </test> <!-- Regression Test(failed) -->
+</suite> <!-- Failed suite [EliteCareer AutomationSuite] -->

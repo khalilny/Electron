@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestSuite" time="57.151" tests="41" errors="0" skipped="0" failures="2">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="25.77-b03"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/muhammadkhalil/Documents/workspace/Electron"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/muhammadkhalil/Documents/workspace/Electron"/>
+    <property name="java.runtime.version" value="1.8.0_77-b03"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/cz/_l98lyf95qz1w44pq98tpqp80000gn/T/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/Users/muhammadkhalil/Documents/workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf7413413309988110536.tmp"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/muhammadkhalil/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.11.6"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/muhammadkhalil"/>
+    <property name="user.timezone" value="America/New_York"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="muhammadkhalil"/>
+    <property name="java.class.path" value="/Users/muhammadkhalil/eclipse/java-mars/Eclipse.app/Contents/MacOS/../../../../../.p2/pool/plugins/org.eclipse.m2e.maven.runtime_1.6.2.20150902-0001/jars/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -PregressionTestSuite -B clean install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_77"/>
+    <property name="java.ext.dirs" value="/Users/muhammadkhalil/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/Users/muhammadkhalil/Documents/workspace/Electron/EMBEDDED"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="testConfirmPasswordFieldWithValidPasswordAndDifferentConfirmPassword" classname="tests.TestRegisterPage" time="2.419"/>
+  <testcase name="testConfirmPasswordFieldWithValidPasswordAndSameConfirmPassword" classname="tests.TestRegisterPage" time="2.685"/>
+  <testcase name="testDateOfBirthWithEmptyCredential" classname="tests.TestRegisterPage" time="0.053"/>
+  <testcase name="testDateOfBirthWithInvalidCredential" classname="tests.TestRegisterPage" time="1.413">
+    <failure message="expected [*] but found [* DateOfBirth can not be empty.]" type="java.lang.AssertionError">java.lang.AssertionError: expected [*] but found [* DateOfBirth can not be empty.]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:189)
+	at org.testng.Assert.assertEquals(Assert.java:199)
+	at tests.TestRegisterPage.testDateOfBirthWithInvalidCredential(TestRegisterPage.java:198)
+</failure>
+    <system-out><![CDATA[File created /Users/muhammadkhalil/Documents/workspace/Electron/Results/QAfileSeperator 2017-04-04_180112/Screenshots
+Screenshot can be found : ..//Users/muhammadkhalil/Documents/workspace/Electron/Results/QAfileSeperator 2017-04-04_180112/Screenshots/TestRegisterPage/testDateOfBirthWithInvalidCredential.png
+]]></system-out>
+  </testcase>
+  <testcase name="testDateOfBirthWithValidCredential" classname="tests.TestRegisterPage" time="1.288">
+    <failure message="expected [*] but found [* DateOfBirth can not be empty.]" type="java.lang.AssertionError">java.lang.AssertionError: expected [*] but found [* DateOfBirth can not be empty.]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:189)
+	at org.testng.Assert.assertEquals(Assert.java:199)
+	at tests.TestRegisterPage.testDateOfBirthWithValidCredential(TestRegisterPage.java:188)
+</failure>
+    <system-out><![CDATA[Screenshot can be found : ..//Users/muhammadkhalil/Documents/workspace/Electron/Results/QAfileSeperator 2017-04-04_180112/Screenshots/TestRegisterPage/testDateOfBirthWithValidCredential.png
+]]></system-out>
+  </testcase>
+  <testcase name="testEmailFieldWithEmptyEmail" classname="tests.TestRegisterPage" time="3.326"/>
+  <testcase name="testEmailFieldWithInValidEmailId" classname="tests.TestRegisterPage" time="2.733"/>
+  <testcase name="testEmailFieldWithValidEmailID" classname="tests.TestRegisterPage" time="2.311"/>
+  <testcase name="testFirstNameWithEmptyField" classname="tests.TestRegisterPage" time="2.245"/>
+  <testcase name="testFirstNameWithNumericData" classname="tests.TestRegisterPage" time="1.085"/>
+  <testcase name="testFirstNameWithOneChar" classname="tests.TestRegisterPage" time="0.954"/>
+  <testcase name="testFirstNameWithThirtyChar" classname="tests.TestRegisterPage" time="0.919"/>
+  <testcase name="testFirstNameWithThirtyOneChar" classname="tests.TestRegisterPage" time="1.199"/>
+  <testcase name="testFirstNameWithTwoChar" classname="tests.TestRegisterPage" time="1.408"/>
+  <testcase name="testGenderWithRandomOption" classname="tests.TestRegisterPage" time="0.979"/>
+  <testcase name="testGenderWithoutSelectedOption" classname="tests.TestRegisterPage" time="1.907"/>
+  <testcase name="testLastNameWithEmptyField" classname="tests.TestRegisterPage" time="0.914"/>
+  <testcase name="testLastNameWithNumericData" classname="tests.TestRegisterPage" time="0.947"/>
+  <testcase name="testLastNameWithOneChar" classname="tests.TestRegisterPage" time="0.911"/>
+  <testcase name="testLastNameWithThirtyChar" classname="tests.TestRegisterPage" time="0.993"/>
+  <testcase name="testLastNameWithThirtyOneChar" classname="tests.TestRegisterPage" time="0.91"/>
+  <testcase name="testLastNameWithTwoChar" classname="tests.TestRegisterPage" time="0.869"/>
+  <testcase name="testPasswordFieldWithEmptyPassword" classname="tests.TestRegisterPage" time="1.009"/>
+  <testcase name="testPasswordFieldWithFiveCharacter" classname="tests.TestRegisterPage" time="1.363"/>
+  <testcase name="testPasswordFieldWithNumberAndCharacter" classname="tests.TestRegisterPage" time="0.926"/>
+  <testcase name="testPasswordFieldWithSixCharacter" classname="tests.TestRegisterPage" time="0.894"/>
+  <testcase name="testPasswordFieldWithTwentyCharacter" classname="tests.TestRegisterPage" time="0.928"/>
+  <testcase name="testPasswordFieldWithTwentyOneCharacter" classname="tests.TestRegisterPage" time="0.938"/>
+  <testcase name="testPhoneNumberWithCharacter" classname="tests.TestRegisterPage" time="0.894"/>
+  <testcase name="testPhoneNumberWithEmptyDigitNumber" classname="tests.TestRegisterPage" time="0.88"/>
+  <testcase name="testPhoneNumberWithOneDigitNumber" classname="tests.TestRegisterPage" time="0.981"/>
+  <testcase name="testPhoneNumberWithValidSixteenDigitNumber" classname="tests.TestRegisterPage" time="1.934"/>
+  <testcase name="testUserTypeWithRandomOption" classname="tests.TestRegisterPage" time="0.984"/>
+  <testcase name="testUserTypeWithoutSelectedOption" classname="tests.TestRegisterPage" time="1.916"/>
+  <testcase name="testWithEmptyEmailAndEmptyPassword" classname="tests.TestSigninPage" time="1.694"/>
+  <testcase name="testWithEmptyEmailAndValidPassword" classname="tests.TestSigninPage" time="1.25"/>
+  <testcase name="testWithInValidEmailAndValidPassword" classname="tests.TestSigninPage" time="1.396"/>
+  <testcase name="testWithInvalidEmailAndInValidPassword" classname="tests.TestSigninPage" time="0.926"/>
+  <testcase name="testWithValidEmailAndEmptyPassword" classname="tests.TestSigninPage" time="1.009"/>
+  <testcase name="testWithValidEmailAndInValidPassword" classname="tests.TestSigninPage" time="1.491"/>
+  <testcase name="testWithValidEmailAndValidPassword" classname="tests.TestSigninPage" time="3.27"/>
+</testsuite>

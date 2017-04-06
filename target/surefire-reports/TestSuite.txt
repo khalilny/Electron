@@ -1,0 +1,24 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 41, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 66.673 sec <<< FAILURE! - in TestSuite
+testDateOfBirthWithInvalidCredential(tests.TestRegisterPage)  Time elapsed: 1.413 sec  <<< FAILURE!
+java.lang.AssertionError: expected [*] but found [* DateOfBirth can not be empty.]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:189)
+	at org.testng.Assert.assertEquals(Assert.java:199)
+	at tests.TestRegisterPage.testDateOfBirthWithInvalidCredential(TestRegisterPage.java:198)
+
+testDateOfBirthWithValidCredential(tests.TestRegisterPage)  Time elapsed: 1.288 sec  <<< FAILURE!
+java.lang.AssertionError: expected [*] but found [* DateOfBirth can not be empty.]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:189)
+	at org.testng.Assert.assertEquals(Assert.java:199)
+	at tests.TestRegisterPage.testDateOfBirthWithValidCredential(TestRegisterPage.java:188)
+

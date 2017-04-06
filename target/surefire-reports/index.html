@@ -1,0 +1,1112 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-EliteCareer_AutomationSuite">
+              <span class="suite-name border-failed">EliteCareer AutomationSuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-EliteCareer_AutomationSuite">
+                    <span>testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-EliteCareer_AutomationSuite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-EliteCareer_AutomationSuite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-EliteCareer_AutomationSuite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-EliteCareer_AutomationSuite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-EliteCareer_AutomationSuite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-EliteCareer_AutomationSuite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">41 methods, 2 failed,   39 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-EliteCareer_AutomationSuite" class="hide-methods failed suite-EliteCareer_AutomationSuite"> (hide)</a> <!-- hide-methods failed suite-EliteCareer_AutomationSuite -->
+                      <a href="#" panel-name="suite-EliteCareer_AutomationSuite" class="show-methods failed suite-EliteCareer_AutomationSuite"> (show)</a> <!-- show-methods failed suite-EliteCareer_AutomationSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-EliteCareer_AutomationSuite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-EliteCareer_AutomationSuite" title="tests.TestRegisterPage" hash-for-method="testDateOfBirthWithInvalidCredential">testDateOfBirthWithInvalidCredential</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-EliteCareer_AutomationSuite" title="tests.TestRegisterPage" hash-for-method="testDateOfBirthWithValidCredential">testDateOfBirthWithValidCredential</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-EliteCareer_AutomationSuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-EliteCareer_AutomationSuite" class="hide-methods passed suite-EliteCareer_AutomationSuite"> (hide)</a> <!-- hide-methods passed suite-EliteCareer_AutomationSuite -->
+                      <a href="#" panel-name="suite-EliteCareer_AutomationSuite" class="show-methods passed suite-EliteCareer_AutomationSuite"> (show)</a> <!-- show-methods passed suite-EliteCareer_AutomationSuite -->
+                    </span>
+                    <div class="method-list-content passed suite-EliteCareer_AutomationSuite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-EliteCareer_AutomationSuite" title="tests.TestRegisterPage" hash-for-method="testConfirmPasswordFieldWithValidPasswordAndDifferentConfirmPassword">testConfirmPasswordFieldWithValidPasswordAndDifferentConfirmPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-EliteCareer_AutomationSuite" title="tests.TestRegisterPage" hash-for-method="testConfirmPasswordFieldWithValidPasswordAndSameConfirmPassword">testConfirmPasswordFieldWithValidPasswordAndSameConfirmPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-EliteCareer_AutomationSuite" title="tests.TestRegisterPage" hash-for-method="testDateOfBirthWithEmptyCredential">testDateOfBirthWithEmptyCredential</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-EliteCareer_AutomationSuite" title="tests.TestRegisterPage" hash-for-method="testEmailFieldWithEmptyEmail">testEmailFieldWithEmptyEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-EliteCareer_AutomationSuite" title="tests.TestRegisterPage" hash-for-method="testEmailFieldWithInValidEmailId">testEmailFieldWithInValidEmailId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-EliteCareer_AutomationSuite" title="tests.TestRegisterPage" hash-for-method="testEmailFieldWithValidEmailID">testEmailFieldWithValidEmailID</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-EliteCareer_AutomationSuite" title="tests.TestRegisterPage" hash-for-method="testFirstNameWithEmptyField">testFirstNameWithEmptyField</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-EliteCareer_AutomationSuite" title="tests.TestRegisterPage" hash-for-method="testFirstNameWithNumericData">testFirstNameWithNumericData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-EliteCareer_AutomationSuite" title="tests.TestRegisterPage" hash-for-method="testFirstNameWithOneChar">testFirstNameWithOneChar</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-EliteCareer_AutomationSuite" title="tests.TestRegisterPage" hash-for-method="testFirstNameWithThirtyChar">testFirstNameWithThirtyChar</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-EliteCareer_AutomationSuite" title="tests.TestRegisterPage" hash-for-method="testFirstNameWithThirtyOneChar">testFirstNameWithThirtyOneChar</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-EliteCareer_AutomationSuite" title="tests.TestRegisterPage" hash-for-method="testFirstNameWithTwoChar">testFirstNameWithTwoChar</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-EliteCareer_AutomationSuite" title="tests.TestRegisterPage" hash-for-method="testGenderWithRandomOption">testGenderWithRandomOption</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-EliteCareer_AutomationSuite" title="tests.TestRegisterPage" hash-for-method="testGenderWithoutSelectedOption">testGenderWithoutSelectedOption</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-EliteCareer_AutomationSuite" title="tests.TestRegisterPage" hash-for-method="testLastNameWithEmptyField">testLastNameWithEmptyField</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-EliteCareer_AutomationSuite" title="tests.TestRegisterPage" hash-for-method="testLastNameWithNumericData">testLastNameWithNumericData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-EliteCareer_AutomationSuite" title="tests.TestRegisterPage" hash-for-method="testLastNameWithOneChar">testLastNameWithOneChar</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-EliteCareer_AutomationSuite" title="tests.TestRegisterPage" hash-for-method="testLastNameWithThirtyChar">testLastNameWithThirtyChar</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-EliteCareer_AutomationSuite" title="tests.TestRegisterPage" hash-for-method="testLastNameWithThirtyOneChar">testLastNameWithThirtyOneChar</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-EliteCareer_AutomationSuite" title="tests.TestRegisterPage" hash-for-method="testLastNameWithTwoChar">testLastNameWithTwoChar</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-EliteCareer_AutomationSuite" title="tests.TestRegisterPage" hash-for-method="testPasswordFieldWithEmptyPassword">testPasswordFieldWithEmptyPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-EliteCareer_AutomationSuite" title="tests.TestRegisterPage" hash-for-method="testPasswordFieldWithFiveCharacter">testPasswordFieldWithFiveCharacter</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-EliteCareer_AutomationSuite" title="tests.TestRegisterPage" hash-for-method="testPasswordFieldWithNumberAndCharacter">testPasswordFieldWithNumberAndCharacter</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-EliteCareer_AutomationSuite" title="tests.TestRegisterPage" hash-for-method="testPasswordFieldWithSixCharacter">testPasswordFieldWithSixCharacter</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-EliteCareer_AutomationSuite" title="tests.TestRegisterPage" hash-for-method="testPasswordFieldWithTwentyCharacter">testPasswordFieldWithTwentyCharacter</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-EliteCareer_AutomationSuite" title="tests.TestRegisterPage" hash-for-method="testPasswordFieldWithTwentyOneCharacter">testPasswordFieldWithTwentyOneCharacter</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-EliteCareer_AutomationSuite" title="tests.TestRegisterPage" hash-for-method="testPhoneNumberWithCharacter">testPhoneNumberWithCharacter</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-EliteCareer_AutomationSuite" title="tests.TestRegisterPage" hash-for-method="testPhoneNumberWithEmptyDigitNumber">testPhoneNumberWithEmptyDigitNumber</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-EliteCareer_AutomationSuite" title="tests.TestRegisterPage" hash-for-method="testPhoneNumberWithOneDigitNumber">testPhoneNumberWithOneDigitNumber</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-EliteCareer_AutomationSuite" title="tests.TestRegisterPage" hash-for-method="testPhoneNumberWithValidSixteenDigitNumber">testPhoneNumberWithValidSixteenDigitNumber</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-EliteCareer_AutomationSuite" title="tests.TestRegisterPage" hash-for-method="testUserTypeWithRandomOption">testUserTypeWithRandomOption</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-EliteCareer_AutomationSuite" title="tests.TestRegisterPage" hash-for-method="testUserTypeWithoutSelectedOption">testUserTypeWithoutSelectedOption</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-EliteCareer_AutomationSuite" title="tests.TestSigninPage" hash-for-method="testWithEmptyEmailAndEmptyPassword">testWithEmptyEmailAndEmptyPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-EliteCareer_AutomationSuite" title="tests.TestSigninPage" hash-for-method="testWithEmptyEmailAndValidPassword">testWithEmptyEmailAndValidPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-EliteCareer_AutomationSuite" title="tests.TestSigninPage" hash-for-method="testWithInValidEmailAndValidPassword">testWithInValidEmailAndValidPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-EliteCareer_AutomationSuite" title="tests.TestSigninPage" hash-for-method="testWithInvalidEmailAndInValidPassword">testWithInvalidEmailAndInValidPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-EliteCareer_AutomationSuite" title="tests.TestSigninPage" hash-for-method="testWithValidEmailAndEmptyPassword">testWithValidEmailAndEmptyPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-EliteCareer_AutomationSuite" title="tests.TestSigninPage" hash-for-method="testWithValidEmailAndInValidPassword">testWithValidEmailAndInValidPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-EliteCareer_AutomationSuite" title="tests.TestSigninPage" hash-for-method="testWithValidEmailAndValidPassword">testWithValidEmailAndValidPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-EliteCareer_AutomationSuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-EliteCareer_AutomationSuite" class="panel EliteCareer_AutomationSuite">
+          <div class="suite-EliteCareer_AutomationSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.TestRegisterPage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDateOfBirthWithInvalidCredential">
+                  </a> <!-- testDateOfBirthWithInvalidCredential -->
+                  <span class="method-name">testDateOfBirthWithInvalidCredential</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [*] but found [* DateOfBirth can not be empty.]
+	at tests.TestRegisterPage.testDateOfBirthWithInvalidCredential(TestRegisterPage.java:198)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDateOfBirthWithValidCredential">
+                  </a> <!-- testDateOfBirthWithValidCredential -->
+                  <span class="method-name">testDateOfBirthWithValidCredential</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [*] but found [* DateOfBirth can not be empty.]
+	at tests.TestRegisterPage.testDateOfBirthWithValidCredential(TestRegisterPage.java:188)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-EliteCareer_AutomationSuite-class-failed -->
+          <div class="suite-EliteCareer_AutomationSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.TestSigninPage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testWithEmptyEmailAndEmptyPassword">
+                  </a> <!-- testWithEmptyEmailAndEmptyPassword -->
+                  <span class="method-name">testWithEmptyEmailAndEmptyPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testWithEmptyEmailAndValidPassword">
+                  </a> <!-- testWithEmptyEmailAndValidPassword -->
+                  <span class="method-name">testWithEmptyEmailAndValidPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testWithInValidEmailAndValidPassword">
+                  </a> <!-- testWithInValidEmailAndValidPassword -->
+                  <span class="method-name">testWithInValidEmailAndValidPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testWithInvalidEmailAndInValidPassword">
+                  </a> <!-- testWithInvalidEmailAndInValidPassword -->
+                  <span class="method-name">testWithInvalidEmailAndInValidPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testWithValidEmailAndEmptyPassword">
+                  </a> <!-- testWithValidEmailAndEmptyPassword -->
+                  <span class="method-name">testWithValidEmailAndEmptyPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testWithValidEmailAndInValidPassword">
+                  </a> <!-- testWithValidEmailAndInValidPassword -->
+                  <span class="method-name">testWithValidEmailAndInValidPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testWithValidEmailAndValidPassword">
+                  </a> <!-- testWithValidEmailAndValidPassword -->
+                  <span class="method-name">testWithValidEmailAndValidPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-EliteCareer_AutomationSuite-class-passed -->
+          <div class="suite-EliteCareer_AutomationSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.TestRegisterPage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testConfirmPasswordFieldWithValidPasswordAndDifferentConfirmPassword">
+                  </a> <!-- testConfirmPasswordFieldWithValidPasswordAndDifferentConfirmPassword -->
+                  <span class="method-name">testConfirmPasswordFieldWithValidPasswordAndDifferentConfirmPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testConfirmPasswordFieldWithValidPasswordAndSameConfirmPassword">
+                  </a> <!-- testConfirmPasswordFieldWithValidPasswordAndSameConfirmPassword -->
+                  <span class="method-name">testConfirmPasswordFieldWithValidPasswordAndSameConfirmPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDateOfBirthWithEmptyCredential">
+                  </a> <!-- testDateOfBirthWithEmptyCredential -->
+                  <span class="method-name">testDateOfBirthWithEmptyCredential</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testEmailFieldWithEmptyEmail">
+                  </a> <!-- testEmailFieldWithEmptyEmail -->
+                  <span class="method-name">testEmailFieldWithEmptyEmail</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testEmailFieldWithInValidEmailId">
+                  </a> <!-- testEmailFieldWithInValidEmailId -->
+                  <span class="method-name">testEmailFieldWithInValidEmailId</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testEmailFieldWithValidEmailID">
+                  </a> <!-- testEmailFieldWithValidEmailID -->
+                  <span class="method-name">testEmailFieldWithValidEmailID</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFirstNameWithEmptyField">
+                  </a> <!-- testFirstNameWithEmptyField -->
+                  <span class="method-name">testFirstNameWithEmptyField</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFirstNameWithNumericData">
+                  </a> <!-- testFirstNameWithNumericData -->
+                  <span class="method-name">testFirstNameWithNumericData</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFirstNameWithOneChar">
+                  </a> <!-- testFirstNameWithOneChar -->
+                  <span class="method-name">testFirstNameWithOneChar</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFirstNameWithThirtyChar">
+                  </a> <!-- testFirstNameWithThirtyChar -->
+                  <span class="method-name">testFirstNameWithThirtyChar</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFirstNameWithThirtyOneChar">
+                  </a> <!-- testFirstNameWithThirtyOneChar -->
+                  <span class="method-name">testFirstNameWithThirtyOneChar</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFirstNameWithTwoChar">
+                  </a> <!-- testFirstNameWithTwoChar -->
+                  <span class="method-name">testFirstNameWithTwoChar</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGenderWithRandomOption">
+                  </a> <!-- testGenderWithRandomOption -->
+                  <span class="method-name">testGenderWithRandomOption</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGenderWithoutSelectedOption">
+                  </a> <!-- testGenderWithoutSelectedOption -->
+                  <span class="method-name">testGenderWithoutSelectedOption</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLastNameWithEmptyField">
+                  </a> <!-- testLastNameWithEmptyField -->
+                  <span class="method-name">testLastNameWithEmptyField</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLastNameWithNumericData">
+                  </a> <!-- testLastNameWithNumericData -->
+                  <span class="method-name">testLastNameWithNumericData</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLastNameWithOneChar">
+                  </a> <!-- testLastNameWithOneChar -->
+                  <span class="method-name">testLastNameWithOneChar</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLastNameWithThirtyChar">
+                  </a> <!-- testLastNameWithThirtyChar -->
+                  <span class="method-name">testLastNameWithThirtyChar</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLastNameWithThirtyOneChar">
+                  </a> <!-- testLastNameWithThirtyOneChar -->
+                  <span class="method-name">testLastNameWithThirtyOneChar</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLastNameWithTwoChar">
+                  </a> <!-- testLastNameWithTwoChar -->
+                  <span class="method-name">testLastNameWithTwoChar</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPasswordFieldWithEmptyPassword">
+                  </a> <!-- testPasswordFieldWithEmptyPassword -->
+                  <span class="method-name">testPasswordFieldWithEmptyPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPasswordFieldWithFiveCharacter">
+                  </a> <!-- testPasswordFieldWithFiveCharacter -->
+                  <span class="method-name">testPasswordFieldWithFiveCharacter</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPasswordFieldWithNumberAndCharacter">
+                  </a> <!-- testPasswordFieldWithNumberAndCharacter -->
+                  <span class="method-name">testPasswordFieldWithNumberAndCharacter</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPasswordFieldWithSixCharacter">
+                  </a> <!-- testPasswordFieldWithSixCharacter -->
+                  <span class="method-name">testPasswordFieldWithSixCharacter</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPasswordFieldWithTwentyCharacter">
+                  </a> <!-- testPasswordFieldWithTwentyCharacter -->
+                  <span class="method-name">testPasswordFieldWithTwentyCharacter</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPasswordFieldWithTwentyOneCharacter">
+                  </a> <!-- testPasswordFieldWithTwentyOneCharacter -->
+                  <span class="method-name">testPasswordFieldWithTwentyOneCharacter</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPhoneNumberWithCharacter">
+                  </a> <!-- testPhoneNumberWithCharacter -->
+                  <span class="method-name">testPhoneNumberWithCharacter</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPhoneNumberWithEmptyDigitNumber">
+                  </a> <!-- testPhoneNumberWithEmptyDigitNumber -->
+                  <span class="method-name">testPhoneNumberWithEmptyDigitNumber</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPhoneNumberWithOneDigitNumber">
+                  </a> <!-- testPhoneNumberWithOneDigitNumber -->
+                  <span class="method-name">testPhoneNumberWithOneDigitNumber</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPhoneNumberWithValidSixteenDigitNumber">
+                  </a> <!-- testPhoneNumberWithValidSixteenDigitNumber -->
+                  <span class="method-name">testPhoneNumberWithValidSixteenDigitNumber</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUserTypeWithRandomOption">
+                  </a> <!-- testUserTypeWithRandomOption -->
+                  <span class="method-name">testUserTypeWithRandomOption</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUserTypeWithoutSelectedOption">
+                  </a> <!-- testUserTypeWithoutSelectedOption -->
+                  <span class="method-name">testUserTypeWithoutSelectedOption</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-EliteCareer_AutomationSuite-class-passed -->
+        </div> <!-- panel EliteCareer_AutomationSuite -->
+        <div panel-name="test-xml-EliteCareer_AutomationSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/muhammadkhalil/Documents/workspace/Electron/src/main/resources/suites/testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;EliteCareer AutomationSuite&quot;&gt;
+  &lt;test name=&quot;Regression Test&quot;&gt;
+    &lt;packages&gt;
+      &lt;package name=&quot;tests&quot;/&gt;
+    &lt;/packages&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.TestRegisterPage&quot;/&gt;
+      &lt;class name=&quot;tests.TestSigninPage&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Regression Test --&gt;
+&lt;/suite&gt; &lt;!-- EliteCareer AutomationSuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-EliteCareer_AutomationSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for EliteCareer AutomationSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Regression Test (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-EliteCareer_AutomationSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for EliteCareer AutomationSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-EliteCareer_AutomationSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for EliteCareer AutomationSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_EliteCareer_AutomationSuite');
+function tableData_EliteCareer_AutomationSuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(41);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testEmailFieldWithEmptyEmail')
+data.setCell(0, 2, 'tests.TestRegisterPage')
+data.setCell(0, 3, 3326);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testWithValidEmailAndValidPassword')
+data.setCell(1, 2, 'tests.TestSigninPage')
+data.setCell(1, 3, 3271);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testEmailFieldWithInValidEmailId')
+data.setCell(2, 2, 'tests.TestRegisterPage')
+data.setCell(2, 3, 2734);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testConfirmPasswordFieldWithValidPasswordAndSameConfirmPassword')
+data.setCell(3, 2, 'tests.TestRegisterPage')
+data.setCell(3, 3, 2685);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testConfirmPasswordFieldWithValidPasswordAndDifferentConfirmPassword')
+data.setCell(4, 2, 'tests.TestRegisterPage')
+data.setCell(4, 3, 2411);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testEmailFieldWithValidEmailID')
+data.setCell(5, 2, 'tests.TestRegisterPage')
+data.setCell(5, 3, 2312);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testFirstNameWithEmptyField')
+data.setCell(6, 2, 'tests.TestRegisterPage')
+data.setCell(6, 3, 2246);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testPhoneNumberWithValidSixteenDigitNumber')
+data.setCell(7, 2, 'tests.TestRegisterPage')
+data.setCell(7, 3, 1934);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testUserTypeWithoutSelectedOption')
+data.setCell(8, 2, 'tests.TestRegisterPage')
+data.setCell(8, 3, 1915);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testGenderWithoutSelectedOption')
+data.setCell(9, 2, 'tests.TestRegisterPage')
+data.setCell(9, 3, 1907);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testWithEmptyEmailAndEmptyPassword')
+data.setCell(10, 2, 'tests.TestSigninPage')
+data.setCell(10, 3, 1693);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'testWithValidEmailAndInValidPassword')
+data.setCell(11, 2, 'tests.TestSigninPage')
+data.setCell(11, 3, 1491);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'testFirstNameWithTwoChar')
+data.setCell(12, 2, 'tests.TestRegisterPage')
+data.setCell(12, 3, 1408);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testWithInValidEmailAndValidPassword')
+data.setCell(13, 2, 'tests.TestSigninPage')
+data.setCell(13, 3, 1396);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testPasswordFieldWithFiveCharacter')
+data.setCell(14, 2, 'tests.TestRegisterPage')
+data.setCell(14, 3, 1363);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'testWithEmptyEmailAndValidPassword')
+data.setCell(15, 2, 'tests.TestSigninPage')
+data.setCell(15, 3, 1250);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'testFirstNameWithThirtyOneChar')
+data.setCell(16, 2, 'tests.TestRegisterPage')
+data.setCell(16, 3, 1199);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'testFirstNameWithNumericData')
+data.setCell(17, 2, 'tests.TestRegisterPage')
+data.setCell(17, 3, 1085);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'testWithValidEmailAndEmptyPassword')
+data.setCell(18, 2, 'tests.TestSigninPage')
+data.setCell(18, 3, 1008);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'testPasswordFieldWithEmptyPassword')
+data.setCell(19, 2, 'tests.TestRegisterPage')
+data.setCell(19, 3, 1008);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'testLastNameWithThirtyChar')
+data.setCell(20, 2, 'tests.TestRegisterPage')
+data.setCell(20, 3, 993);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'testUserTypeWithRandomOption')
+data.setCell(21, 2, 'tests.TestRegisterPage')
+data.setCell(21, 3, 983);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'testPhoneNumberWithOneDigitNumber')
+data.setCell(22, 2, 'tests.TestRegisterPage')
+data.setCell(22, 3, 982);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'testGenderWithRandomOption')
+data.setCell(23, 2, 'tests.TestRegisterPage')
+data.setCell(23, 3, 978);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'testFirstNameWithOneChar')
+data.setCell(24, 2, 'tests.TestRegisterPage')
+data.setCell(24, 3, 953);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'testLastNameWithNumericData')
+data.setCell(25, 2, 'tests.TestRegisterPage')
+data.setCell(25, 3, 947);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'testPasswordFieldWithTwentyOneCharacter')
+data.setCell(26, 2, 'tests.TestRegisterPage')
+data.setCell(26, 3, 937);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'testPasswordFieldWithTwentyCharacter')
+data.setCell(27, 2, 'tests.TestRegisterPage')
+data.setCell(27, 3, 927);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'testPasswordFieldWithNumberAndCharacter')
+data.setCell(28, 2, 'tests.TestRegisterPage')
+data.setCell(28, 3, 926);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'testWithInvalidEmailAndInValidPassword')
+data.setCell(29, 2, 'tests.TestSigninPage')
+data.setCell(29, 3, 926);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'testFirstNameWithThirtyChar')
+data.setCell(30, 2, 'tests.TestRegisterPage')
+data.setCell(30, 3, 919);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'testLastNameWithEmptyField')
+data.setCell(31, 2, 'tests.TestRegisterPage')
+data.setCell(31, 3, 914);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'testLastNameWithThirtyOneChar')
+data.setCell(32, 2, 'tests.TestRegisterPage')
+data.setCell(32, 3, 910);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'testLastNameWithOneChar')
+data.setCell(33, 2, 'tests.TestRegisterPage')
+data.setCell(33, 3, 910);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'testPhoneNumberWithCharacter')
+data.setCell(34, 2, 'tests.TestRegisterPage')
+data.setCell(34, 3, 894);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'testPasswordFieldWithSixCharacter')
+data.setCell(35, 2, 'tests.TestRegisterPage')
+data.setCell(35, 3, 893);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'testPhoneNumberWithEmptyDigitNumber')
+data.setCell(36, 2, 'tests.TestRegisterPage')
+data.setCell(36, 3, 880);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'testLastNameWithTwoChar')
+data.setCell(37, 2, 'tests.TestRegisterPage')
+data.setCell(37, 3, 869);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'testDateOfBirthWithInvalidCredential')
+data.setCell(38, 2, 'tests.TestRegisterPage')
+data.setCell(38, 3, 56);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'testDateOfBirthWithValidCredential')
+data.setCell(39, 2, 'tests.TestRegisterPage')
+data.setCell(39, 3, 55);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'testDateOfBirthWithEmptyCredential')
+data.setCell(40, 2, 'tests.TestRegisterPage')
+data.setCell(40, 3, 53);
+window.suiteTableData['EliteCareer_AutomationSuite']= { tableData: data, tableDiv: 'times-div-EliteCareer_AutomationSuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 54 seconds</span>
+              <div id="times-div-EliteCareer_AutomationSuite">
+              </div> <!-- times-div-EliteCareer_AutomationSuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-EliteCareer_AutomationSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for EliteCareer AutomationSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-EliteCareer_AutomationSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">2 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.TestSigninPage</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setUp</span>
+                <br/>
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-EliteCareer_AutomationSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.TestRegisterPage</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-class before">
+                <span class="method-name">classSetUp</span>
+                <span class="method-start">3771 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testConfirmPasswordFieldWithValidPasswordAndDifferentConfirmPassword</span>
+                <span class="method-start">5897 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testConfirmPasswordFieldWithValidPasswordAndSameConfirmPassword</span>
+                <span class="method-start">8317 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDateOfBirthWithEmptyCredential</span>
+                <span class="method-start">11003 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testDateOfBirthWithInvalidCredential</span>
+                <span class="method-start">11056 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testDateOfBirthWithValidCredential</span>
+                <span class="method-start">12469 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testEmailFieldWithEmptyEmail</span>
+                <span class="method-start">13758 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testEmailFieldWithInValidEmailId</span>
+                <span class="method-start">17084 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testEmailFieldWithValidEmailID</span>
+                <span class="method-start">19818 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testFirstNameWithEmptyField</span>
+                <span class="method-start">22130 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testFirstNameWithNumericData</span>
+                <span class="method-start">24377 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testFirstNameWithOneChar</span>
+                <span class="method-start">25462 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testFirstNameWithThirtyChar</span>
+                <span class="method-start">26416 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testFirstNameWithThirtyOneChar</span>
+                <span class="method-start">27335 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testFirstNameWithTwoChar</span>
+                <span class="method-start">28534 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGenderWithRandomOption</span>
+                <span class="method-start">29942 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGenderWithoutSelectedOption</span>
+                <span class="method-start">30921 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLastNameWithEmptyField</span>
+                <span class="method-start">32828 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLastNameWithNumericData</span>
+                <span class="method-start">33742 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLastNameWithOneChar</span>
+                <span class="method-start">34689 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLastNameWithThirtyChar</span>
+                <span class="method-start">35600 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLastNameWithThirtyOneChar</span>
+                <span class="method-start">36593 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLastNameWithTwoChar</span>
+                <span class="method-start">37503 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testPasswordFieldWithEmptyPassword</span>
+                <span class="method-start">38372 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testPasswordFieldWithFiveCharacter</span>
+                <span class="method-start">39381 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testPasswordFieldWithNumberAndCharacter</span>
+                <span class="method-start">40744 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testPasswordFieldWithSixCharacter</span>
+                <span class="method-start">41670 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testPasswordFieldWithTwentyCharacter</span>
+                <span class="method-start">42564 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testPasswordFieldWithTwentyOneCharacter</span>
+                <span class="method-start">43492 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testPhoneNumberWithCharacter</span>
+                <span class="method-start">44430 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testPhoneNumberWithEmptyDigitNumber</span>
+                <span class="method-start">45324 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testPhoneNumberWithOneDigitNumber</span>
+                <span class="method-start">46204 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testPhoneNumberWithValidSixteenDigitNumber</span>
+                <span class="method-start">47186 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testUserTypeWithRandomOption</span>
+                <span class="method-start">49120 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testUserTypeWithoutSelectedOption</span>
+                <span class="method-start">50104 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">classTearDown</span>
+                <span class="method-start">52020 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.TestSigninPage</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">classSetUp</span>
+                <span class="method-start">53325 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testWithEmptyEmailAndEmptyPassword</span>
+                <span class="method-start">54359 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testWithEmptyEmailAndValidPassword</span>
+                <span class="method-start">56053 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testWithInValidEmailAndValidPassword</span>
+                <span class="method-start">57303 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testWithInvalidEmailAndInValidPassword</span>
+                <span class="method-start">58699 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testWithValidEmailAndEmptyPassword</span>
+                <span class="method-start">59626 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testWithValidEmailAndInValidPassword</span>
+                <span class="method-start">60635 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testWithValidEmailAndValidPassword</span>
+                <span class="method-start">62126 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">classTearDown</span>
+                <span class="method-start">65397 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.TestRegisterPage</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">66174 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

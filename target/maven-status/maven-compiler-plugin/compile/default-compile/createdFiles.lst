@@ -1,0 +1,9 @@
+base/PageBase.class
+base/TestBase.class
+utils/ReadProperties.class
+pages/MenuBar.class
+pages/RegisterPage.class
+pages/SigninPage.class
+base/Driver.class
+base/SauceLabs.class
+listener/EliteListener.class
