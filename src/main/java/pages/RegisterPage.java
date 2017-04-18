@@ -59,20 +59,19 @@ public class RegisterPage extends PageBase {
 
 		element.clear();
 		element.sendKeys(text);
-		submitButton.click();
+		submitButton.click(); 
 
 	}
 
-	public void processDropDownList(WebElement element) {
-		randomlySelectFromDropdownList(element);
+	public String processDropDownList(WebElement element) {
+		String category = randomlySelectFromDropdownList(element);
 		submitButton.click();
 
+		
+		return category;
+		
 	}
 	
 	
-	
-
-
-
 
 }

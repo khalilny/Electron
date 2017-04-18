@@ -3,16 +3,16 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="tests.TestRegisterPage">
+      <class name="tests.TestJobSearchPage">
         <methods>
+          <include name="testJobSearchWithRandomlySelectedCategory"/>
+          <include name="classTearDown"/>
           <include name="classSetUp"/>
+          <include name="testJobSearchWithoutSelectionCategory"/>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="classTearDown"/>
-          <include name="testDateOfBirthWithInvalidCredential"/>
-          <include name="testDateOfBirthWithValidCredential"/>
         </methods>
-      </class> <!-- tests.TestRegisterPage -->
+      </class> <!-- tests.TestJobSearchPage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -18,7 +18,7 @@ public class PageBase extends Driver {
 	/**write a method that take a dropdownList WebElement and select option randomly
 	 */
 	
-	public static void randomlySelectFromDropdownList( WebElement dropdownList ) {
+	public static String randomlySelectFromDropdownList( WebElement dropdownList ) {
         Select select = new Select(dropdownList);
         List<WebElement> optionsList = select.getOptions();
         
@@ -27,16 +27,48 @@ public class PageBase extends Driver {
         Random random = new Random();
         int randomIndex = random.nextInt( maxIndex - minIndex + 1 ) + minIndex;
        
-        select.selectByIndex(randomIndex);
+       select.selectByIndex(randomIndex);
      
+       
+         return  select.getFirstSelectedOption().getText();
+        
         
 	}
         
         
+        public int getNumFromString(String text){
+        	int num = 0;
+        	
+        String[] wordArray = text.split(" ");
+        
+        for(int i=0;i<wordArray.length;i++){
+        	
+        	
+        	if(wordArray[i].matches("[0-9]+")){
+        		
+        		
+        		num = Integer.valueOf(wordArray[i]);
+        	}
+        }
+        	
+        	
+        	return num;
+        }
         
         
+    public int getRandomNumber(int min, int max){
+    	 
+         Random random = new Random();
+         int randomIndex = random.nextInt( max - min + 1 ) + min;
         
-    
+    	
+    	
+    	
+    	return randomIndex;
+    	
+    	
+    	
+    }
 	
 	
 	

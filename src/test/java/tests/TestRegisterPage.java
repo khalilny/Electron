@@ -20,11 +20,8 @@ public class TestRegisterPage extends TestBase {
 	@Test
 
 	public void testFirstNameWithOneChar() {
-
 		registerPage.processTextField(registerPage.firstNameField, "a");
-
 		Assert.assertTrue(registerPage.getCurrentUrl().contains("/register"));
-
 		Assert.assertEquals(registerPage.errorMessage.get(0).getText(),
 				"* FirstName can not be less than 2 character.");
 
@@ -33,11 +30,8 @@ public class TestRegisterPage extends TestBase {
 	@Test
 
 	public void testFirstNameWithTwoChar() {
-
 		registerPage.processTextField(registerPage.firstNameField, "ab");
-
 		Assert.assertTrue(registerPage.getCurrentUrl().contains("/register"));
-
 		Assert.assertEquals(registerPage.errorMessage.get(0).getText(), "*");
 
 	}
@@ -45,11 +39,8 @@ public class TestRegisterPage extends TestBase {
 	@Test
 
 	public void testFirstNameWithThirtyChar() {
-
 		registerPage.processTextField(registerPage.firstNameField, "abcdefghijklmnopqurstxyyyyyyyp");
-
 		Assert.assertTrue(registerPage.getCurrentUrl().contains("/register"));
-
 		Assert.assertEquals(registerPage.errorMessage.get(0).getText(), "*");
 
 	}
@@ -57,11 +48,8 @@ public class TestRegisterPage extends TestBase {
 	@Test
 
 	public void testFirstNameWithThirtyOneChar() {
-
 		registerPage.processTextField(registerPage.firstNameField, "abcdefghijklmnopqurstxyyyyyyypp");
-
 		Assert.assertTrue(registerPage.getCurrentUrl().contains("/register"));
-
 		Assert.assertEquals(registerPage.errorMessage.get(0).getText(),
 				"* FirstName can not be greater than 30 character.");
 
@@ -70,11 +58,8 @@ public class TestRegisterPage extends TestBase {
 	@Test
 
 	public void testFirstNameWithEmptyField() {
-
 		registerPage.processTextField(registerPage.firstNameField, "");
-
 		Assert.assertTrue(registerPage.getCurrentUrl().contains("/register"));
-
 		Assert.assertEquals(registerPage.errorMessage.get(0).getText(), "* FirstName can not be empty.");
 
 	}
@@ -82,11 +67,8 @@ public class TestRegisterPage extends TestBase {
 	@Test
 
 	public void testFirstNameWithNumericData() {
-
 		registerPage.processTextField(registerPage.firstNameField, "12345");
-
 		Assert.assertTrue(registerPage.getCurrentUrl().contains("/register"));
-
 		Assert.assertEquals(registerPage.errorMessage.get(0).getText(), "*");
 
 	}
@@ -94,11 +76,8 @@ public class TestRegisterPage extends TestBase {
 	@Test
 
 	public void testLastNameWithOneChar() {
-
 		registerPage.processTextField(registerPage.lastNameField, "a");
-
 		Assert.assertTrue(registerPage.getCurrentUrl().contains("/register"));
-
 		Assert.assertEquals(registerPage.errorMessage.get(1).getText(), "* LastName can not be less than 2 character.");
 
 	}
@@ -106,11 +85,8 @@ public class TestRegisterPage extends TestBase {
 	@Test
 
 	public void testLastNameWithTwoChar() {
-
 		registerPage.processTextField(registerPage.lastNameField, "ab");
-
 		Assert.assertTrue(registerPage.getCurrentUrl().contains("/register"));
-
 		Assert.assertEquals(registerPage.errorMessage.get(1).getText(), "*");
 
 	}
@@ -118,11 +94,8 @@ public class TestRegisterPage extends TestBase {
 	@Test
 
 	public void testLastNameWithThirtyChar() {
-
 		registerPage.processTextField(registerPage.lastNameField, "abcdefghijklmnopqurstxyyyyyyyp");
-
 		Assert.assertTrue(registerPage.getCurrentUrl().contains("/register"));
-
 		Assert.assertEquals(registerPage.errorMessage.get(1).getText(), "*");
 
 	}
@@ -130,11 +103,8 @@ public class TestRegisterPage extends TestBase {
 	@Test
 
 	public void testLastNameWithThirtyOneChar() {
-
 		registerPage.processTextField(registerPage.lastNameField, "abcdefghijklmnopqurstxyyyyyyypp");
-
 		Assert.assertTrue(registerPage.getCurrentUrl().contains("/register"));
-
 		Assert.assertEquals(registerPage.errorMessage.get(1).getText(),
 				"* LastName can not be greater than 30 character.");
 
@@ -143,11 +113,8 @@ public class TestRegisterPage extends TestBase {
 	@Test
 
 	public void testLastNameWithEmptyField() {
-
 		registerPage.processTextField(registerPage.lastNameField, "");
-
 		Assert.assertTrue(registerPage.getCurrentUrl().contains("/register"));
-
 		Assert.assertEquals(registerPage.errorMessage.get(1).getText(), "* LastName can not be empty.");
 
 	}
@@ -183,15 +150,16 @@ public class TestRegisterPage extends TestBase {
 
 	@Test
 	public void testDateOfBirthWithValidCredential() {
-		registerPage.dateOfBirthField.sendKeys("1979-02-15");
+		registerPage.dateOfBirthField.sendKeys("1980-02-15");
+		registerPage.submitButton.click();
 		Assert.assertTrue(registerPage.getCurrentUrl().contains("/register"));
 		Assert.assertEquals(registerPage.errorMessage.get(3).getText(), "*");
 
 	}
 
 	@Test
-//BUG
-	public void testDateOfBirthWithInvalidCredential() {
+   
+	public void testDateOfBirthWithFutureDateCredential() {
 		menuBar.registerLink.click();
 		registerPage.dateOfBirthField.sendKeys("2020-02-15");
 		registerPage.submitButton.click();
@@ -202,27 +170,40 @@ public class TestRegisterPage extends TestBase {
 
 	@Test
 	public void testDateOfBirthWithEmptyCredential() {
-		registerPage.dateOfBirthField.sendKeys("");
+		registerPage.processTextField(registerPage.dateOfBirthField, "");
 		Assert.assertTrue(registerPage.getCurrentUrl().contains("/register"));
 		Assert.assertEquals(registerPage.errorMessage.get(3).getText(), "* DateOfBirth can not be empty.");
 
 	}
+	
+	
+	@Test
+
+	public void testPhoneNumberWithThreeDigitNumber() {
+		registerPage.processTextField(registerPage.phoneNoField, "123");
+		Assert.assertTrue(registerPage.getCurrentUrl().contains("/register"));
+		Assert.assertEquals(registerPage.errorMessage.get(4).getText(), "*");
+
+	}
+	
+	
+	
 
 	@Test
 
-	public void testPhoneNumberWithValidSixteenDigitNumber() {
-		registerPage.processTextField(registerPage.phoneNoField, "01188013475538417");
+	public void testPhoneNumberWithThirtyDigitNumber() {
+		registerPage.processTextField(registerPage.phoneNoField, "123456789123456789123456789123");
 		Assert.assertTrue(registerPage.getCurrentUrl().contains("/register"));
 		Assert.assertEquals(registerPage.errorMessage.get(4).getText(), "*");
 
 	}
 
 	@Test
-	// Bug
-	public void testPhoneNumberWithOneDigitNumber() {
-		registerPage.processTextField(registerPage.phoneNoField, "1");
+
+	public void testPhoneNumberWithTwpDigitNumber() {
+		registerPage.processTextField(registerPage.phoneNoField, "12");
 		Assert.assertTrue(registerPage.getCurrentUrl().contains("/register"));
-		Assert.assertEquals(registerPage.errorMessage.get(4).getText(), "*");
+		Assert.assertEquals(registerPage.errorMessage.get(4).getText(), "* PhoneNo can not be less than 3 character.");
 
 	}
 
@@ -232,15 +213,6 @@ public class TestRegisterPage extends TestBase {
 		registerPage.processTextField(registerPage.phoneNoField, "");
 		Assert.assertTrue(registerPage.getCurrentUrl().contains("/register"));
 		Assert.assertEquals(registerPage.errorMessage.get(4).getText(), "* PhoneNo can not be empty.");
-
-	}
-
-	@Test
-	// Bug
-	public void testPhoneNumberWithCharacter() {
-		registerPage.processTextField(registerPage.phoneNoField, "qweeerrriri");
-		Assert.assertTrue(registerPage.getCurrentUrl().contains("/register"));
-		Assert.assertEquals(registerPage.errorMessage.get(4).getText(), "*");
 
 	}
 
@@ -313,7 +285,7 @@ public class TestRegisterPage extends TestBase {
 
 	@Test
 	public void testPasswordFieldWithTwentyOneCharacter() {
-		registerPage.processTextField(registerPage.passwordField, "errrrrrrtrrtrtrtrtrtrtrtrtrtrtrtrtrtrtrtrtrt");
+		registerPage.processTextField(registerPage.passwordField, "asdfghjklqwertyuiopas");
 		Assert.assertTrue(registerPage.getCurrentUrl().contains("/register"));
 		Assert.assertEquals(registerPage.errorMessage.get(7).getText(),
 				"* Password can not be greater than 20 character.");
